@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "config:base", 
+    "group:allNonMajor",
+    ":separateMultipleMajorReleases",
+    ":automergeMinor",
+    ":automergePr",
+    ":automergeRequireAllStatusChecks",
+    ":ignoreUnstable",
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    ":labels(dependency related,maintenance-bot)",
+    ":assignees(jimthedev,AndersDJohnson,LinusU,pgoodjohn,dmwelch)",
+    ":assigneesSampleSize(3)",
+    ":bumpVersion(patch)"
+  ]
+}
